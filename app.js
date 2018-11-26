@@ -38,7 +38,7 @@ class GroceryListItem extends React.Component {
 		let style = {
 			fontWeight: this.state.bought ? 'bold' : 'normal'
 		};
-		return (<li style={style} onClick={this.onListItemHover.bind(this)}>
+		return (<li style={style} onMouseOver={this.onListItemHover.bind(this)}>
 					{this.props.item}
 				</li>);
 	}
